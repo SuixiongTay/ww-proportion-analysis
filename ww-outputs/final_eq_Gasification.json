@@ -1,0 +1,90 @@
+{
+  "Gasification": {
+    "final_eq_pH": 7.838884167663589,
+    "final_eq_chg_bal": -6.8352759248282375e-18,
+    "final_eq_calc_tds_mg_L": 6810.972736522037,
+    "reported_median_tds": 4600.0,
+    "final_equilibrated_proportions": {
+      "Cl[-1]": {
+        "concentration_mg_L": 3356.4669448890677,
+        "proportion_percent": 49.28028748215218
+      },
+      "NH4[+]": {
+        "concentration_mg_L": 1033.6750407129805,
+        "proportion_percent": 15.176613983053727
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 137.59469090397565,
+        "proportion_percent": 2.020191479642263
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 1299.9999999999995,
+        "proportion_percent": 19.086847801182554
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 763.1495177241659,
+        "proportion_percent": 11.20470668795925
+      },
+      "S[-2]": {
+        "concentration_mg_L": 99.75172410684223,
+        "proportion_percent": 1.4645738276406546
+      },
+      "C[+2]": {
+        "concentration_mg_L": 9.463641639825655,
+        "proportion_percent": 0.13894699048022002
+      },
+      "Al[+3]": {
+        "concentration_mg_L": 15.999999999989816,
+        "proportion_percent": 0.23491504986055892
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 10.249999999999948,
+        "proportion_percent": 0.15049245381701556
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 4.000000000075061,
+        "proportion_percent": 0.05872876246627917
+      },
+      "Ni[+2]": {
+        "concentration_mg_L": 0.6194999999999999,
+        "proportion_percent": 0.009095617086794303
+      },
+      "Sb[+3]": {
+        "concentration_mg_L": 0.3500000000000001,
+        "proportion_percent": 0.005138766715702998
+      },
+      "As[+3]": {
+        "concentration_mg_L": 0.195,
+        "proportion_percent": 0.002863027170177384
+      },
+      "Mn[+2]": {
+        "concentration_mg_L": 0.12000000000242743,
+        "proportion_percent": 0.001761862873990953
+      },
+      "Ba[+2]": {
+        "concentration_mg_L": 0.2160000000028541,
+        "proportion_percent": 0.0031713531731614687
+      },
+      "Zn[+2]": {
+        "concentration_mg_L": 0.06850000000001671,
+        "proportion_percent": 0.0010057300572164033
+      },
+      "Ti[+4]": {
+        "concentration_mg_L": 0.0285,
+        "proportion_percent": 0.00041844243256438686
+      },
+      "V[+3]": {
+        "concentration_mg_L": 0.019,
+        "proportion_percent": 0.00027896162170959124
+      },
+      "Cr[+3]": {
+        "concentration_mg_L": 0.017,
+        "proportion_percent": 0.00024959724047700273
+      },
+      "Cu[+2]": {
+        "concentration_mg_L": 0.007260226083658579,
+        "proportion_percent": 0.00010659602327766692
+      }
+    }
+  }
+}

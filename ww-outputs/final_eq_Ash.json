@@ -1,0 +1,46 @@
+{
+  "Ash": {
+    "final_eq_pH": 7.33171267446482,
+    "final_eq_chg_bal": -6.601938943465425e-12,
+    "final_eq_calc_tds_mg_L": 425.8061847174064,
+    "reported_median_tds": 230.0,
+    "final_equilibrated_proportions": {
+      "SO4[-2]": {
+        "concentration_mg_L": 266.68138251923665,
+        "proportion_percent": 62.62975787827608
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 83.30548033339454,
+        "proportion_percent": 19.56417809870039
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 25.80263500065749,
+        "proportion_percent": 6.059713533231522
+      },
+      "K[+1]": {
+        "concentration_mg_L": 10.700750000249851,
+        "proportion_percent": 2.5130564994849918
+      },
+      "HCO3[-]": {
+        "concentration_mg_L": 17.70983613838878,
+        "proportion_percent": 4.159130790958853
+      },
+      "Cl[-1]": {
+        "concentration_mg_L": 6.99999999999997,
+        "proportion_percent": 1.643940424361295
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 5.650000009851494,
+        "proportion_percent": 1.326894773405232
+      },
+      "SiO2(aq)": {
+        "concentration_mg_L": 5.848644239037809,
+        "proportion_percent": 1.3735460988945858
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 0.026912337930180004,
+        "proportion_percent": 0.006320325748213554
+      }
+    }
+  }
+}

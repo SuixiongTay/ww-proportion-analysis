@@ -1,0 +1,50 @@
+{
+  "CRL": {
+    "final_eq_pH": 7.412139928069261,
+    "final_eq_chg_bal": 1.5918421191135016e-19,
+    "final_eq_calc_tds_mg_L": 1475.7970178230241,
+    "reported_median_tds": 1875.5,
+    "final_equilibrated_proportions": {
+      "SO4[-2]": {
+        "concentration_mg_L": 980.9326272452461,
+        "proportion_percent": 66.46799088212268
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 304.1904147684819,
+        "proportion_percent": 20.61194128290074
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 120.00000012718668,
+        "proportion_percent": 8.131199526626022
+      },
+      "Cl[-1]": {
+        "concentration_mg_L": 51.99999999999988,
+        "proportion_percent": 3.5235197911367275
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 17.825000094029978,
+        "proportion_percent": 1.207821934775554
+      },
+      "Mn[+2]": {
+        "concentration_mg_L": 0.3485000010688821,
+        "proportion_percent": 0.02361435867264192
+      },
+      "Al[+3]": {
+        "concentration_mg_L": 0.10298333350448056,
+        "proportion_percent": 0.0069781502646206195
+      },
+      "Mo[+6]": {
+        "concentration_mg_L": 0.12325000000000001,
+        "proportion_percent": 0.008351419504953899
+      },
+      "Fe[+2]": {
+        "concentration_mg_L": 0.09872500030207784,
+        "proportion_percent": 0.006689605623929836
+      },
+      "Ba[+2]": {
+        "concentration_mg_L": 0.04276666670034904,
+        "proportion_percent": 0.002897869163839005
+      }
+    }
+  }
+}

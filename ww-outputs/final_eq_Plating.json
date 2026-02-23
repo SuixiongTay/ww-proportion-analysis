@@ -1,0 +1,78 @@
+{
+  "Plating": {
+    "final_eq_pH": 2.9697303198995146,
+    "final_eq_chg_bal": -1.2422512857812405e-17,
+    "final_eq_calc_tds_mg_L": 3878.3498086543527,
+    "reported_median_tds": 360.0,
+    "final_equilibrated_proportions": {
+      "SO4[-2]": {
+        "concentration_mg_L": 2781.6124838257915,
+        "proportion_percent": 71.72154707702632
+      },
+      "S[-2]": {
+        "concentration_mg_L": 0.575717566797615,
+        "proportion_percent": 0.014844395044328614
+      },
+      "Fe[+2]": {
+        "concentration_mg_L": 434.10250000000036,
+        "proportion_percent": 11.192969211578628
+      },
+      "Al[+3]": {
+        "concentration_mg_L": 120.00000000300552,
+        "proportion_percent": 3.0940994475338774
+      },
+      "Cr[+6]": {
+        "concentration_mg_L": 115.77499999999999,
+        "proportion_percent": 2.9851613627438556
+      },
+      "Cr[+3]": {
+        "concentration_mg_L": 30.000000000000004,
+        "proportion_percent": 0.7735248618640957
+      },
+      "Ni[+2]": {
+        "concentration_mg_L": 106.05000000000003,
+        "proportion_percent": 2.734410386689579
+      },
+      "Zn[+2]": {
+        "concentration_mg_L": 142.02800000000067,
+        "proportion_percent": 3.662072969361143
+      },
+      "As[+3]": {
+        "concentration_mg_L": 58.03,
+        "proportion_percent": 1.4962549244657823
+      },
+      "Sn[+2]": {
+        "concentration_mg_L": 51.73,
+        "proportion_percent": 1.3338147034743222
+      },
+      "NH4[+]": {
+        "concentration_mg_L": 3.971722831216576,
+        "proportion_percent": 0.1024075451459759
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 1.082586935909688,
+        "proportion_percent": 0.027913597001847198
+      },
+      "C[+2]": {
+        "concentration_mg_L": 1.8465642224050056,
+        "proportion_percent": 0.04761211116863377
+      },
+      "Cu[+2]": {
+        "concentration_mg_L": 13.79988911198409,
+        "proportion_percent": 0.355818577302911
+      },
+      "Cd[+2]": {
+        "concentration_mg_L": 7.600000000317706,
+        "proportion_percent": 0.19595963168042935
+      },
+      "Ag[+1]": {
+        "concentration_mg_L": 2.5,
+        "proportion_percent": 0.06446040515534131
+      },
+      "Pb[+2]": {
+        "concentration_mg_L": 7.05000000612968,
+        "proportion_percent": 0.18177834269611112
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "Smelting&Refining": {
+    "final_eq_pH": 7.472774949112678,
+    "final_eq_chg_bal": 7.710221111801594e-20,
+    "final_eq_calc_tds_mg_L": 179.97631293751274,
+    "reported_median_tds": 645.0,
+    "final_equilibrated_proportions": {
+      "Cl[-1]": {
+        "concentration_mg_L": 63.760831742766435,
+        "proportion_percent": 35.4273463557974
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 41.6392265409152,
+        "proportion_percent": 23.135948204124073
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 37.82704133460011,
+        "proportion_percent": 21.01778879520304
+      },
+      "S[-2]": {
+        "concentration_mg_L": 0.0005742391732366408,
+        "proportion_percent": 0.00031906375003693676
+      },
+      "HCO3[-]": {
+        "concentration_mg_L": 21.96020027438886,
+        "proportion_percent": 12.20171694594798
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 8.000000000000004,
+        "proportion_percent": 4.445029387160288
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 1.5000000000914664,
+        "proportion_percent": 0.8334430101433749
+      },
+      "Fe[+2]": {
+        "concentration_mg_L": 1.0000000097987758,
+        "proportion_percent": 0.5556286788395165
+      },
+      "Cr[+3]": {
+        "concentration_mg_L": 0.8100000000000002,
+        "proportion_percent": 0.45005922544997895
+      },
+      "K[+1]": {
+        "concentration_mg_L": 0.5000000000284693,
+        "proportion_percent": 0.2778143367133362
+      },
+      "Ag[+1]": {
+        "concentration_mg_L": 0.81,
+        "proportion_percent": 0.4500592254499789
+      },
+      "Tl[+1]": {
+        "concentration_mg_L": 1.1699999999999997,
+        "proportion_percent": 0.6500855478721915
+      },
+      "As[+3]": {
+        "concentration_mg_L": 0.3000000000000001,
+        "proportion_percent": 0.16668860201851074
+      },
+      "Pb[+2]": {
+        "concentration_mg_L": 1.0000000000092046,
+        "proportion_percent": 0.55562867340015
+      },
+      "Se[-2]": {
+        "concentration_mg_L": 0.075,
+        "proportion_percent": 0.04167215050462767
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 0.0001253807237313725,
+        "proportion_percent": 6.966512519617197e-05
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Battery Recycling": {
+    "final_eq_pH": 6.330093909068182,
+    "final_eq_chg_bal": 3.053950821545778e-18,
+    "final_eq_calc_tds_mg_L": 147714.63577291608,
+    "reported_median_tds": null,
+    "final_equilibrated_proportions": {
+      "Na[+1]": {
+        "concentration_mg_L": 42450.00000007497,
+        "proportion_percent": 28.737842921221425
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 102836.38715534804,
+        "proportion_percent": 69.6182789317099
+      },
+      "Li[+1]": {
+        "concentration_mg_L": 1919.0000000012271,
+        "proportion_percent": 1.299126515094506
+      },
+      "Ni[+2]": {
+        "concentration_mg_L": 522.5,
+        "proportion_percent": 0.35372256599085217
+      }
+    }
+  }
+}

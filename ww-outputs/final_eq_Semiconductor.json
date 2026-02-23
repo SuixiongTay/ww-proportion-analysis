@@ -1,0 +1,46 @@
+{
+  "Semiconductor": {
+    "final_eq_pH": 7.14281474138954,
+    "final_eq_chg_bal": 1.2442957147895637e-14,
+    "final_eq_calc_tds_mg_L": 809.3769293653297,
+    "reported_median_tds": null,
+    "final_equilibrated_proportions": {
+      "SiO2(aq)": {
+        "concentration_mg_L": 380.9117017219498,
+        "proportion_percent": 47.06233744772543
+      },
+      "F[-1]": {
+        "concentration_mg_L": 79.46073590606635,
+        "proportion_percent": 9.817519257483065
+      },
+      "NH4[+]": {
+        "concentration_mg_L": 27.77545512618474,
+        "proportion_percent": 3.4317082830572865
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 1.3361437648289718,
+        "proportion_percent": 0.16508300599532835
+      },
+      "K[+1]": {
+        "concentration_mg_L": 35.59999999999993,
+        "proportion_percent": 4.398445113566006
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 33.000000007837336,
+        "proportion_percent": 4.0772103590491735
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 5.847000000194126,
+        "proportion_percent": 0.7224075443784927
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 15.7985825521234,
+        "proportion_percent": 1.9519437704397884
+      },
+      "S[-2]": {
+        "concentration_mg_L": 1.0167482223924906,
+        "proportion_percent": 0.12562110254239275
+      }
+    }
+  }
+}

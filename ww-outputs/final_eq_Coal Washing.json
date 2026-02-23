@@ -1,0 +1,62 @@
+{
+  "Coal Washing": {
+    "final_eq_pH": 4.1031325252068305,
+    "final_eq_chg_bal": 2.416477125412257e-13,
+    "final_eq_calc_tds_mg_L": 1503.4488421309566,
+    "reported_median_tds": 1219.5,
+    "final_equilibrated_proportions": {
+      "Cl[-1]": {
+        "concentration_mg_L": 933.3260482406749,
+        "proportion_percent": 62.079002762594726
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 197.59825033564601,
+        "proportion_percent": 13.142997939030266
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 195.41866186632478,
+        "proportion_percent": 12.998025366087115
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 30.00000000000001,
+        "proportion_percent": 1.9954120924712442
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 96.06472370808008,
+        "proportion_percent": 6.389623711567065
+      },
+      "S[-2]": {
+        "concentration_mg_L": 0.014685898963077428,
+        "proportion_percent": 0.0009768140126578532
+      },
+      "K[+1]": {
+        "concentration_mg_L": 14.799999999999997,
+        "proportion_percent": 0.9844032989524798
+      },
+      "Pb[+2]": {
+        "concentration_mg_L": 29.578787911837946,
+        "proportion_percent": 1.9673957026641222
+      },
+      "NH4[+]": {
+        "concentration_mg_L": 1.3298355442597314,
+        "proportion_percent": 0.08845233086713152
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 0.031696750852053326,
+        "proportion_percent": 0.0021082693314078463
+      },
+      "NO2[-]": {
+        "concentration_mg_L": 0.0011595034226915433,
+        "proportion_percent": 7.71229050300167e-05
+      },
+      "Fe[+2]": {
+        "concentration_mg_L": 4.286682616015508,
+        "proportion_percent": 0.28512327761945355
+      },
+      "Mn[+2]": {
+        "concentration_mg_L": 0.9999999999999999,
+        "proportion_percent": 0.0665137364157081
+      }
+    }
+  }
+}

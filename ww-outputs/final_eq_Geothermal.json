@@ -1,0 +1,46 @@
+{
+  "Geothermal": {
+    "final_eq_pH": 7.121411161437474,
+    "final_eq_chg_bal": -6.895208005030931e-15,
+    "final_eq_calc_tds_mg_L": 1582.2128819648226,
+    "reported_median_tds": 1565.5,
+    "final_equilibrated_proportions": {
+      "Cl[-1]": {
+        "concentration_mg_L": 806.9398043955831,
+        "proportion_percent": 51.00071005574861
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 499.0000000000003,
+        "proportion_percent": 31.538107525728933
+      },
+      "SiO2(aq)": {
+        "concentration_mg_L": 95.4778674919848,
+        "proportion_percent": 6.034451405389806
+      },
+      "K[+1]": {
+        "concentration_mg_L": 61.99999999999999,
+        "proportion_percent": 3.9185624581065976
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 34.38508510780576,
+        "proportion_percent": 2.1732274777781924
+      },
+      "S[-2]": {
+        "concentration_mg_L": 0.0008595332322125482,
+        "proportion_percent": 5.4324752503921165e-05
+      },
+      "HCO3[-]": {
+        "concentration_mg_L": 18.514294875764932,
+        "proportion_percent": 1.1701519490078682
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 9.199999999999992,
+        "proportion_percent": 0.581464106686785
+      },
+      "NO3[-]": {
+        "concentration_mg_L": 0.0006367643643799011,
+        "proportion_percent": 4.0245176337406304e-05
+      }
+    }
+  }
+}

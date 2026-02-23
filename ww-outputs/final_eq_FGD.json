@@ -1,0 +1,66 @@
+{
+  "FGD": {
+    "final_eq_pH": 6.477958120894725,
+    "final_eq_chg_bal": -2.653359675129185e-18,
+    "final_eq_calc_tds_mg_L": 12899.62302869163,
+    "reported_median_tds": 15000.0,
+    "final_equilibrated_proportions": {
+      "Cl[-1]": {
+        "concentration_mg_L": 6790.000000000001,
+        "proportion_percent": 52.63719710953979
+      },
+      "Na[+1]": {
+        "concentration_mg_L": 4435.711464382443,
+        "proportion_percent": 34.386365047384984
+      },
+      "SiO2(aq)": {
+        "concentration_mg_L": 279.9351088770235,
+        "proportion_percent": 2.1701030197113944
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 109.62908241110053,
+        "proportion_percent": 0.8498626833300559
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 734.4387110405047,
+        "proportion_percent": 5.693489719869717
+      },
+      "Br[-1]": {
+        "concentration_mg_L": 109.99999999999994,
+        "proportion_percent": 0.8527380975035896
+      },
+      "Fe[+2]": {
+        "concentration_mg_L": 74.89999999999826,
+        "proportion_percent": 0.5806371227547038
+      },
+      "K[+1]": {
+        "concentration_mg_L": 43.35000000000003,
+        "proportion_percent": 0.3360563320616423
+      },
+      "Ca[+2]": {
+        "concentration_mg_L": 42.6295918012142,
+        "proportion_percent": 0.33047160918110946
+      },
+      "Al[+3]": {
+        "concentration_mg_L": 37.49999999624495,
+        "proportion_percent": 0.2907061695743869
+      },
+      "F[-1]": {
+        "concentration_mg_L": 33.99999999998667,
+        "proportion_percent": 0.26357359377373357
+      },
+      "HCO3[-]": {
+        "concentration_mg_L": 5.7852080214618455,
+        "proportion_percent": 0.04484788438076257
+      },
+      "As[+3]": {
+        "concentration_mg_L": 0.125,
+        "proportion_percent": 0.0009690205653449887
+      },
+      "Hg[+2]": {
+        "concentration_mg_L": 0.02829999999999995,
+        "proportion_percent": 0.00021938625599410508
+      }
+    }
+  }
+}
