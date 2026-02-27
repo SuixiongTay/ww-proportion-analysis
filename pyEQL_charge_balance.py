@@ -5,7 +5,6 @@ from pyEQL.utils import standardize_formula
 
 # other imports
 from collections import defaultdict
-from pathlib import Path
 import pandas as pd
 import numpy as np
 import pprint
@@ -403,7 +402,7 @@ def median_pH_per_industry(df: pd.DataFrame):
                             # print(pH_value)
                             if 0 < pH_value < 14:
                                 consolidated_pH.append(pH_value)
-                        except:
+                        except Exception:
                             pass
 
     # pprint.pprint(consolidated_pH)
@@ -452,7 +451,7 @@ def median_TDS_per_industry(df: pd.DataFrame):
                             tds_value = float(element_value)
                             if tds_value > 0:
                                 consolidated_TDS.append(tds_value)
-                        except:
+                        except Exception:
                             pass
 
     median_TDS = np.median(consolidated_TDS) if consolidated_TDS else None
@@ -612,7 +611,7 @@ class ww_proportion_calculator:
 
         self.final_eq[self.industry] = {}
 
-        for element in final_eq_sol.get_components_by_element().keys():
+        for element in self.final_eq_sol.get_components_by_element().keys():
             # remove O and H entries
             if element in ["O(-2.0)", "H(1.0)", "O(0.0)", "H(0.0)"]:
                 continue
@@ -621,11 +620,11 @@ class ww_proportion_calculator:
                 print(element)
                 continue
 
-            final_val = final_eq_sol.get_total_amount(element, "mg/L").magnitude
+            final_val = self.final_eq_sol.get_total_amount(element, "mg/L").magnitude
 
             if element == "S(6.0)":
                 conc_so4 = final_val * (96.06 / 32.06)
-                prop_so4 = conc_so4 / final_tds * 100.0
+                prop_so4 = conc_so4 / self.final_tds * 100.0
                 self.final_eq[self.industry]["final_equilibrated_proportions"][
                     "SO4[-2]"
                 ] = {
@@ -635,7 +634,7 @@ class ww_proportion_calculator:
 
             elif element == "Si(4.0)":
                 conc_sio2 = final_val * (60.08 / 28.09)
-                prop_sio2 = conc_sio2 / final_tds * 100.0
+                prop_sio2 = conc_sio2 / self.final_tds * 100.0
                 self.final_eq[self.industry]["final_equilibrated_proportions"][
                     "SiO2(aq)"
                 ] = {
@@ -644,9 +643,9 @@ class ww_proportion_calculator:
                 }
 
             elif element == "N(-3.0)":
-                if final_pH < 9.27:
+                if self.final_pH < 9.27:
                     conc_nh4 = final_val * (18.04 / 14.01)
-                    prop_nh4 = conc_nh4 / final_tds * 100.0
+                    prop_nh4 = conc_nh4 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "NH4[+]"
                     ] = {
@@ -656,7 +655,7 @@ class ww_proportion_calculator:
 
                 else:
                     conc_no2 = final_val * (35.05 / 14.01)
-                    prop_no2 = conc_no2 / final_tds * 100.0
+                    prop_no2 = conc_no2 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "NH4OH(aq)"
                     ] = {
@@ -666,7 +665,7 @@ class ww_proportion_calculator:
 
             elif element == "N(3.0)":
                 conc_no2 = final_val * (46.01 / 14.01)
-                prop_no2 = conc_no2 / final_tds * 100.0
+                prop_no2 = conc_no2 / self.final_tds * 100.0
                 self.final_eq[self.industry]["final_equilibrated_proportions"][
                     "NO2[-]"
                 ] = {
@@ -676,7 +675,7 @@ class ww_proportion_calculator:
 
             elif element == "N(5.0)":
                 conc_no3 = final_val * (62.00 / 14.01)
-                prop_no3 = conc_no3 / final_tds * 100.0
+                prop_no3 = conc_no3 / self.final_tds * 100.0
                 self.final_eq[self.industry]["final_equilibrated_proportions"][
                     "NO3[-]"
                 ] = {
@@ -685,18 +684,18 @@ class ww_proportion_calculator:
                 }
 
             elif element == "C(4.0)":
-                if final_pH < 6.3:
+                if self.final_pH < 6.3:
                     conc_h2co3 = final_val * (62.03 / 12.01)
-                    prop_h2co3 = conc_h2co3 / final_tds * 100.0
+                    prop_h2co3 = conc_h2co3 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "H2CO3(aq)"
                     ] = {
                         "concentration_mg_L": conc_h2co3,
                         "proportion_percent": prop_h2co3,
                     }
-                elif 6.3 <= final_pH < 10.3:
+                elif 6.3 <= self.final_pH < 10.3:
                     conc_hco3 = final_val * (61.02 / 12.01)
-                    prop_hco3 = conc_hco3 / final_tds * 100.0
+                    prop_hco3 = conc_hco3 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "HCO3[-]"
                     ] = {
@@ -705,7 +704,7 @@ class ww_proportion_calculator:
                     }
                 else:
                     conc_co3 = final_val * (60.01 / 12.01)
-                    prop_co3 = conc_co3 / final_tds * 100.0
+                    prop_co3 = conc_co3 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "CO3[-2]"
                     ] = {
@@ -714,27 +713,27 @@ class ww_proportion_calculator:
                     }
 
             elif element == "B(3.0)":
-                if final_pH < 9.24:
+                if self.final_pH < 9.24:
                     conc_boh3 = final_val * (61.83 / 10.81)
-                    prop_boh3 = conc_boh3 / final_tds * 100.0
+                    prop_boh3 = conc_boh3 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "B(OH)3(aq)"
                     ] = {
                         "concentration_mg_L": conc_boh3,
                         "proportion_percent": prop_boh3,
                     }
-                elif 9.24 <= final_pH < 12.7:
+                elif 9.24 <= self.final_pH < 12.7:
                     conc_bo3 = final_val * (58.82 / 10.81)
-                    prop_bo3 = conc_bo3 / final_tds * 100.0
+                    prop_bo3 = conc_bo3 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "H2BO3[-]"
                     ] = {
                         "concentration_mg_L": conc_bo3,
                         "proportion_percent": prop_bo3,
                     }
-                elif 12.7 <= final_pH < 13.8:
+                elif 12.7 <= self.final_pH < 13.8:
                     conc_bo3_2 = final_val * (57.81 / 10.81)
-                    prop_bo3_2 = conc_bo3_2 / final_tds * 100.0
+                    prop_bo3_2 = conc_bo3_2 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "HBO3[-2]"
                     ] = {
@@ -743,7 +742,7 @@ class ww_proportion_calculator:
                     }
                 else:
                     conc_bo4 = final_val * (56.80 / 10.81)
-                    prop_bo4 = conc_bo4 / final_tds * 100.0
+                    prop_bo4 = conc_bo4 / self.final_tds * 100.0
                     self.final_eq[self.industry]["final_equilibrated_proportions"][
                         "BO4[-3]"
                     ] = {
@@ -758,8 +757,8 @@ class ww_proportion_calculator:
                     corrected_element
                 ] = {
                     "concentration_mg_L": final_val,
-                    "proportion_percent": (final_val / final_tds) * 100
-                    if final_tds > 0
+                    "proportion_percent": (final_val / self.final_tds) * 100
+                    if self.final_tds > 0
                     else 0,
                 }
 
@@ -822,7 +821,7 @@ class ww_proportion_calculator:
                                     ion_dict_raw[citation_name][col_idx][
                                         ion_name
                                     ] = ion_concentration
-                            except:
+                            except Exception:
                                 continue
 
         return ion_dict_raw
@@ -891,7 +890,7 @@ class ww_proportion_calculator:
                                         "pH_value": float(pH_value)
                                     }
                                     found_pH = True
-                            except:
+                            except Exception:
                                 pass
 
                 if not found_pH:
@@ -1000,7 +999,7 @@ class ww_proportion_calculator:
                     )
                     final_sol.equilibrate()
                     equilibrated = True
-                except:
+                except Exception:
                     pass
 
             # 2nd equilibration check
@@ -1017,7 +1016,7 @@ class ww_proportion_calculator:
                     )
                     final_sol.equilibrate()
                     equilibrated = True
-                except:
+                except Exception:
                     pass
 
             # 3rd equilibration check
@@ -1045,7 +1044,7 @@ class ww_proportion_calculator:
                         )
                         # final_sol.equilibrate()
                         equilibrated = False
-                except:
+                except Exception:
                     final_sol = None
 
             if final_sol is None:
@@ -1138,7 +1137,7 @@ class ww_proportion_calculator:
                     prop_data = target_data.get("proportion_percent", None)
 
                     if prop_data is None:
-                        print(f"prop data error")
+                        print("prop data error")
                         continue
 
                     # compile pH values for median pH calculation
@@ -1153,10 +1152,12 @@ class ww_proportion_calculator:
                     for element in all_elements:
                         if element in prop_data:
                             conc = prop_data[element].get("concentration_mg_L", None)
-                            prop = prop_data[element].get("proportion_percent", None)
+                            prop = prop_data[element].get(
+                                "proportion_percent", None
+                            )  # noqa: F841
                         else:
                             conc = 0.0
-                            prop = 0.0
+                            prop = 0.0  # noqa: F841
 
                         element_concentrations[element].append(conc)
 
@@ -1183,7 +1184,7 @@ class ww_proportion_calculator:
         Perform a final equilibration step for all solutions to ensure charge balance is achieved.
         """
         from pyEQL import Solution
-        from monty.serialization import dumpfn, loadfn
+        from monty.serialization import dumpfn
 
         custom_eos = Phreeqc2026EOS(phreeqc_db="llnl.dat")
 
@@ -1212,7 +1213,6 @@ class ww_proportion_calculator:
                         solutes=median_conc_dict, pH=median_pH_dict, engine=custom_eos
                     )
                     # final_eq_sol.equilibrate()
-                    equilibrated = False
                 except Exception as e:
                     return f"failed to equilibrate: {e}"
             elif rep_ion_count is not None and rep_ion_count > 1:
@@ -1224,7 +1224,6 @@ class ww_proportion_calculator:
                         engine=custom_eos,
                     )
                     final_eq_sol.equilibrate()
-                    equilibrated = True
                 except Exception as e:
                     return f"failed to equilibrate: {e}"
             else:
@@ -1398,11 +1397,11 @@ class ww_proportion_calculator:
             solution_dict = final_eq_sol.as_dict()
             solution_dict.pop("database", None)
             solution_dict.pop("engine", None)
-            dumpfn(solution_dict, "./final_eq_solutions_custom/" + filename)
+            dumpfn(solution_dict, "./ww-outputs/" + filename)
 
         json_name = f"final_eq_{self.industry}.json"
 
-        dumpfn(self.final_eq, "./final_eq_solutions_custom/" + json_name, indent=2)
+        dumpfn(self.final_eq, "./ww-outputs/" + json_name, indent=2)
 
         return self.final_eq
 
@@ -1418,7 +1417,6 @@ def execution(df: pd.DataFrame, REPRESENTATIVE_IONS: list, industry: str):
     """
     Execute final code
     """
-    from pyEQL import Solution
 
     ww_prop = ww_proportion_calculator(df, REPRESENTATIVE_IONS, industry)
     # calling each function sequentially
@@ -1443,15 +1441,3 @@ def execution(df: pd.DataFrame, REPRESENTATIVE_IONS: list, industry: str):
         eq_prop_from_initial_medians,
         final_eq_from_initial_medians,
     )
-
-
-import os
-
-folder_path = "./final_eq_solutions_custom"
-file_name = f"{INDUSTRY}.txt"
-full_path = os.path.join(folder_path, file_name)
-
-data = execution(raw_data, representative_ions[INDUSTRY], INDUSTRY)
-
-with open(full_path, "w") as f:
-    pprint.pprint(data, stream=f)

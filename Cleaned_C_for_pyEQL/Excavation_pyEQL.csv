@@ -1,0 +1,88 @@
+Source,Element,Concentration mg/L,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+https://doi.org/10.1016/j.gsd.2021.100719,As,<0.01,0.0038,0.0009,0.0975,
+https://doi.org/10.1016/j.gsd.2021.100719,Ca,8,122.0,114.0,511.0,
+https://doi.org/10.1016/j.gsd.2021.100719,CO3,30,375.0,380.0,930.0,
+https://doi.org/10.1016/j.gsd.2021.100719,Cl,0.01,28.4,20.5,247.0,
+https://doi.org/10.1016/j.gsd.2021.100719,Cu,0.3,0.0063,0.0029,0.151,
+https://doi.org/10.1016/j.gsd.2021.100719,F,<0.01,0.2,0.1,11.4,
+https://doi.org/10.1016/j.gsd.2021.100719,Fe,<0.1,0.02,0.0056,6.387,
+https://doi.org/10.1016/j.gsd.2021.100719,Mg,0.3,21.9,19.8,81.1,
+https://doi.org/10.1016/j.gsd.2021.100719,Mn,<0.01,0.03,0.0011,2.585,
+https://doi.org/10.1016/j.gsd.2021.100719,NO3,<0.01,41.6,25.6,254.0,
+https://doi.org/10.1016/j.gsd.2021.100719,pH,6.4,7.2,7.1,8.8,
+https://doi.org/10.1016/j.gsd.2021.100719,K,0.2,9.5,3.7,275.0,
+https://doi.org/10.1016/j.gsd.2021.100719,Na,0.04,31.3,24.6,244.0,
+https://doi.org/10.1016/j.gsd.2021.100719,SO4,0.5,116.0,68.7,1111.0,
+https://doi.org/10.1016/j.gsd.2021.100719,TDS,39.349999999999994,745.9600999999999,657.0104999999999,3673.7205,
+https://doi.org/10.29227/IM-2018-01-27,Cu,0.0041,,,,
+https://doi.org/10.29227/IM-2018-01-27,Ni,0.012,,,,
+https://doi.org/10.29227/IM-2018-01-27,SO4,596.6,,,,
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Sb,0.89,0.11633,0.121,0.132,0.132
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,As,0.89,0.03727,0.018,0.1708,0.196
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Be,0.92,0.00908,0.00715,0.022,0.022
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Cd,0.031,0.02819,0.005,0.124,0.124
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Cr,0.32,0.0216,0.017,0.065,0.065
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Cu,0.225,0.76418,0.045,4.285,7.3
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,CN,,0.0115,0.0115,0.02,0.02
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Pb,0.05,1.0909,0.287,5.496,5.87
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Hg,,0.0027,0.002,0.0053,0.0053
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Ni,2.15,0.07084,0.059,0.184,0.2
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Se,0.02,0.012,0.012,0.012,0.012
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Ag,0.02,0.1106,0.012,0.002,0.02
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Tl,,0.1045,0.0715,0.269,0.269
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdf P170,Zn,5.8,5.2516,0.31,23.98,28.15
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,pH,7.2,4.3,,,
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,TDS,693,214.0,,,9958.0
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,SO4,485,,,,3507.0
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Cd,0.01,,,,0.5
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Cu,0.18,,,,1.6
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Fe,3.6,,,,522.0
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Pb,0.01,,,,0.35
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Ag,0.005,,,,0.2
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Zn,1.5,,,,76.0
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,Hg,0.001,,,,
+https://www.epa.gov/sites/default/files/2015-10/documents/nfmm_dd_1989_vol_1.pdfP353,As,0.01,,,,0.04
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Cd,0.002,,,,0.058
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Ca,30,27.0,29.0,30.0,30.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Cl,0.01,,,,57.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Cr,0.1,,,,0.17
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Cu,0,0.004,0.004,0.0005,0.0007
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,F,63,,,,1.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Fe,0.02,,,,2.5
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Pb,0.065,0.02,0.036,0.031,0.053
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Mg,13,14.0,15.0,12.0,13.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Mn,0.2,,,,57.2
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Hg,0.001,,,,0.002
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,pH,7.8,7.8,7.8,8.0,8.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,K,,4.2,3.8,3.2,3.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Na,24,32.0,42.0,53.0,54.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,SO4,63.5,,,,750.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,TDS,193.898,77.239,89.859,98.2535,100.0897
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P189,Zn,0.008,0.015,0.019,0.022,0.036
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Sb,<0.5,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,As,<0.07,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,B,2.19,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Cd,<0.02,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Co,0.04,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Cu,0.87,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Fe,<0.1,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Pb,<0.1,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Mn,2.22,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Hg,<0.0001,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Mo,<0.5,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Ni,<0.05,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,pH,7.37,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Se,<0.077,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Sr,119,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,TDS,1350,,,,29250.0
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Te,0.6,,,,
+https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9100EI1H.TXT P47,Zn,2.8,,,,
+http://dx.doi.org/10.1016/j.gexplo.2007.04.011,As,1.7,,,,
+http://dx.doi.org/10.1016/j.gexplo.2007.04.011,Cd,13.6,,,,
+http://dx.doi.org/10.1016/j.gexplo.2007.04.011,Cu,17.2,,,,
+http://dx.doi.org/10.1016/j.gexplo.2007.04.011,Pb,1.5,,,,
+http://dx.doi.org/10.1016/j.gexplo.2007.04.011,Zn,50.3,,,,
+https://journals.scicell.org/index.php/NBC/article/view/417/337,Cu,0.2,,,,1.3
+https://journals.scicell.org/index.php/NBC/article/view/417/337,Fe,0.05,,,,205.0
+https://journals.scicell.org/index.php/NBC/article/view/417/337,SO4,950,,,,1660.0
+https://journals.scicell.org/index.php/NBC/article/view/417/337,Zn,5.6,,,,6.9

@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod] #handle pyc files
+*$py.class #match .class files
+
+# Testing
+.pytest_cache/
+.coverage
+
+# pixi
+.pixi/

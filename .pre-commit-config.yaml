@@ -15,3 +15,10 @@ repos:
     hooks:
       - id: black
         language_version: python3
+
+  # linting and sorting with ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.11
+    hooks:
+      - id: ruff
+        args: [--fix]
