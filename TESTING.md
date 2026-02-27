@@ -2,7 +2,7 @@
 
 ## Setup with pixi
 
-### 1. Install pixi 
+### 1. Install pixi
 ```bash
 conda install -c conda-forge pixi
 ```
@@ -14,6 +14,7 @@ cd ./ww-proportion-analysis
 pixi install
 pixi shell --environment dev
 ```
+
 ## Running Tests
 
 ### Run all tests:
