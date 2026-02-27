@@ -1,45 +1,257 @@
 {
   "Geothermal": {
-    "final_eq_pH": 7.121411161437474,
-    "final_eq_chg_bal": -6.895208005030931e-15,
-    "final_eq_calc_tds_mg_L": 1582.2128819648226,
+    "final_eq_pH": 7.174694089211184,
+    "final_eq_chg_bal": 1.2983258912303838e-18,
+    "final_eq_calc_tds_mg_L": 1858.1063243802018,
     "reported_median_tds": 1565.5,
     "final_equilibrated_proportions": {
-      "Cl[-1]": {
-        "concentration_mg_L": 806.9398043955831,
-        "proportion_percent": 51.00071005574861
-      },
       "Na[+1]": {
-        "concentration_mg_L": 499.0000000000003,
-        "proportion_percent": 31.538107525728933
+        "concentration_mg_L": 570.9999999999997,
+        "proportion_percent": 30.730211318260537
       },
-      "SiO2(aq)": {
-        "concentration_mg_L": 95.4778674919848,
-        "proportion_percent": 6.034451405389806
+      "Cl[-1]": {
+        "concentration_mg_L": 791.1518203626586,
+        "proportion_percent": 42.578393388040304
       },
-      "K[+1]": {
-        "concentration_mg_L": 61.99999999999999,
-        "proportion_percent": 3.9185624581065976
-      },
-      "SO4[-2]": {
-        "concentration_mg_L": 34.38508510780576,
-        "proportion_percent": 2.1732274777781924
-      },
-      "S[-2]": {
-        "concentration_mg_L": 0.0008595332322125482,
-        "proportion_percent": 5.4324752503921165e-05
+      "Cl[+1]": {
+        "concentration_mg_L": 5.0175495913153184e-24,
+        "proportion_percent": 2.700356554132603e-25
       },
       "HCO3[-]": {
-        "concentration_mg_L": 18.514294875764932,
-        "proportion_percent": 1.1701519490078682
+        "concentration_mg_L": 202.33480651616176,
+        "proportion_percent": 10.88930185863575
+      },
+      "SiO2(aq)": {
+        "concentration_mg_L": 95.47785793006857,
+        "proportion_percent": 5.138449650448102
+      },
+      "K[+1]": {
+        "concentration_mg_L": 61.999999999999964,
+        "proportion_percent": 3.3367304758881846
+      },
+      "SO4[-2]": {
+        "concentration_mg_L": 103.01327543041644,
+        "proportion_percent": 5.5439925088666815
+      },
+      "S[-2]": {
+        "concentration_mg_L": 8.32639778450462e-12,
+        "proportion_percent": 4.481120200310394e-13
+      },
+      "S[-1]": {
+        "concentration_mg_L": 1.262222457011311e-17,
+        "proportion_percent": 6.793058289774367e-19
+      },
+      "S[+4]": {
+        "concentration_mg_L": 4.476391631510181e-34,
+        "proportion_percent": 2.409114899817881e-35
+      },
+      "Li[+1]": {
+        "concentration_mg_L": 2.499999999999998,
+        "proportion_percent": 0.13454558370516867
       },
       "Ca[+2]": {
-        "concentration_mg_L": 9.199999999999992,
-        "proportion_percent": 0.581464106686785
+        "concentration_mg_L": 11.000000000000005,
+        "proportion_percent": 0.5920005683027431
+      },
+      "B(OH)3(aq)": {
+        "concentration_mg_L": 11.600506469943456,
+        "proportion_percent": 0.6243187657096518
+      },
+      "F[-1]": {
+        "concentration_mg_L": 2.729804899471108,
+        "proportion_percent": 0.14691327744022795
+      },
+      "NH4[+]": {
+        "concentration_mg_L": 1.886663543119527,
+        "proportion_percent": 0.10153689906571148
       },
       "NO3[-]": {
-        "concentration_mg_L": 0.0006367643643799011,
-        "proportion_percent": 4.0245176337406304e-05
+        "concentration_mg_L": 0.5348317139274399,
+        "proportion_percent": 0.028783698053761304
+      },
+      "NO2[-]": {
+        "concentration_mg_L": 0.03999448981253679,
+        "proportion_percent": 0.002152432790727276
+      },
+      "Mg[+2]": {
+        "concentration_mg_L": 2.0499999999999967,
+        "proportion_percent": 0.11032737863823824
+      },
+      "Br[-1]": {
+        "concentration_mg_L": 1.2999999999999998,
+        "proportion_percent": 0.06996370352668778
+      },
+      "Br[+1]": {
+        "concentration_mg_L": 5.891062345592713e-22,
+        "proportion_percent": 3.17046568772525e-23
+      },
+      "Br(aq)": {
+        "concentration_mg_L": 3.1205015526568734e-29,
+        "proportion_percent": 1.6793988114204187e-30
+      },
+      "Al[+3]": {
+        "concentration_mg_L": 0.989878309283423,
+        "proportion_percent": 0.0532735019678495
+      },
+      "Rb[+1]": {
+        "concentration_mg_L": 0.6100000000000003,
+        "proportion_percent": 0.032829122424061205
+      },
+      "Sr[+2]": {
+        "concentration_mg_L": 0.46000000000000074,
+        "proportion_percent": 0.0247563874017511
+      },
+      "As[+5]": {
+        "concentration_mg_L": 0.36000000000000665,
+        "proportion_percent": 0.019374564053544666
+      },
+      "Cs[+1]": {
+        "concentration_mg_L": 0.4999999999999999,
+        "proportion_percent": 0.026909116741033755
+      },
+      "Ag[+1]": {
+        "concentration_mg_L": 0.11949999999999986,
+        "proportion_percent": 0.006431278901107062
+      },
+      "Ag[+2]": {
+        "concentration_mg_L": 1.2856392529491343e-28,
+        "proportion_percent": 6.919083348892738e-30
+      },
+      "Ba[+2]": {
+        "concentration_mg_L": 0.07500000000000004,
+        "proportion_percent": 0.004036367511155067
+      },
+      "Mo[+6]": {
+        "concentration_mg_L": 0.04499999999999993,
+        "proportion_percent": 0.0024218205066930346
+      },
+      "Ni[+2]": {
+        "concentration_mg_L": 0.02780000000000002,
+        "proportion_percent": 0.0014961468908014782
+      },
+      "Mn[+2]": {
+        "concentration_mg_L": 0.02000000000000002,
+        "proportion_percent": 0.0010763646696413517
+      },
+      "I[-1]": {
+        "concentration_mg_L": 0.039499999999985685,
+        "proportion_percent": 0.002125820222540897
+      },
+      "I[+1]": {
+        "concentration_mg_L": 1.3834051576226276e-14,
+        "proportion_percent": 7.445242177323099e-16
+      },
+      "I(aq)": {
+        "concentration_mg_L": 1.5653136209591828e-16,
+        "proportion_percent": 8.424241392544185e-18
+      },
+      "I[+5]": {
+        "concentration_mg_L": 4.443126783356361e-19,
+        "proportion_percent": 2.3912123461710024e-20
+      },
+      "Zn[+2]": {
+        "concentration_mg_L": 0.019999999999999997,
+        "proportion_percent": 0.0010763646696413504
+      },
+      "Be[+2]": {
+        "concentration_mg_L": 0.001999999999999999,
+        "proportion_percent": 0.00010763646696413501
+      },
+      "Cd[+2]": {
+        "concentration_mg_L": 0.028996527413660572,
+        "proportion_percent": 0.0015605418825175564
+      },
+      "Ti[+4]": {
+        "concentration_mg_L": 0.0075000000000000075,
+        "proportion_percent": 0.00040363675111550684
+      },
+      "Cu[+2]": {
+        "concentration_mg_L": 0.010000000000000012,
+        "proportion_percent": 0.000538182334820676
+      },
+      "Sb[+3]": {
+        "concentration_mg_L": 0.01199999999999999,
+        "proportion_percent": 0.0006458188017848097
+      },
+      "Se[+6]": {
+        "concentration_mg_L": 0.007155098497265543,
+        "proportion_percent": 0.0003850747615130275
+      },
+      "Se[+4]": {
+        "concentration_mg_L": 4.4901502734317035e-05,
+        "proportion_percent": 2.4165195578511675e-06
+      },
+      "W[+6]": {
+        "concentration_mg_L": 0.010900000000000002,
+        "proportion_percent": 0.0005866187449545361
+      },
+      "Cr[+6]": {
+        "concentration_mg_L": 0.001999996597762,
+        "proportion_percent": 0.000107636283861696
+      },
+      "Cr[+3]": {
+        "concentration_mg_L": 2.603888997169922e-09,
+        "proportion_percent": 1.4013670601107752e-10
+      },
+      "Cr[+5]": {
+        "concentration_mg_L": 6.830221519294916e-10,
+        "proportion_percent": 3.6759045645965576e-11
+      },
+      "Cr[+2]": {
+        "concentration_mg_L": 6.511714010271154e-31,
+        "proportion_percent": 3.504489449732232e-32
+      },
+      "V[+5]": {
+        "concentration_mg_L": 0.0020843331846892867,
+        "proportion_percent": 0.0001121751299880294
+      },
+      "V[+4]": {
+        "concentration_mg_L": 2.824691617125337e-16,
+        "proportion_percent": 1.5201991296529027e-17
+      },
+      "V[+3]": {
+        "concentration_mg_L": 2.281648663075666e-25,
+        "proportion_percent": 1.2279430047345343e-26
+      },
+      "Tl[+1]": {
+        "concentration_mg_L": 0.004999999999999998,
+        "proportion_percent": 0.00026909116741033755
+      },
+      "Tl[+3]": {
+        "concentration_mg_L": 8.788444442827978e-29,
+        "proportion_percent": 4.7297855496829496e-30
+      },
+      "Co[+2]": {
+        "concentration_mg_L": 0.000999999999999975,
+        "proportion_percent": 5.381823348206618e-05
+      },
+      "Co[+3]": {
+        "concentration_mg_L": 2.5555084523521324e-28,
+        "proportion_percent": 1.3753295055408407e-29
+      },
+      "Bi[+3]": {
+        "concentration_mg_L": 0.0020000000000000005,
+        "proportion_percent": 0.00010763646696413507
+      },
+      "Pb[+2]": {
+        "concentration_mg_L": 0.001923289407905588,
+        "proportion_percent": 0.00010350803840825033
+      },
+      "Hg[+1]": {
+        "concentration_mg_L": 0.0005491174688773003,
+        "proportion_percent": 2.9552532149120496e-05
+      },
+      "Hg[+2]": {
+        "concentration_mg_L": 1.7650622453993328e-06,
+        "proportion_percent": 9.499253203328366e-08
+      },
+      "Au[+1]": {
+        "concentration_mg_L": 0.0004199999999999999,
+        "proportion_percent": 2.2603658062468355e-05
+      },
+      "Au[+3]": {
+        "concentration_mg_L": 6.276482727022382e-34,
+        "proportion_percent": 3.377892128490545e-35
       }
     }
   }
