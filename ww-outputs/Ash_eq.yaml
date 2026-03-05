@@ -205,10 +205,10 @@ solutes:
   SiF6[-2]: 7.592759237516996e-37 mol
   VSO4[+1]: 1.5488073223502684e-38 mol
   V[+3]: 1.0681742318388135e-38 mol
-volume: 1.0 l
+volume: 1.0000249500883083 l
 temperature: 298.15 K
 pressure: 1 atm
-pH: 7.359524350086703
+pH: 7.359535185637204
 pE: 8.5
 balance_charge:
 solvent: H2O(aq)
