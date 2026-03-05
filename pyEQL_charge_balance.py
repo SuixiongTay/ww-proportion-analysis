@@ -5,8 +5,10 @@ from pyEQL.utils import standardize_formula
 
 # other imports
 from collections import defaultdict
+from pathlib import Path
 import pandas as pd
 import numpy as np
+import os
 import pprint
 
 element_to_ion = {
@@ -298,19 +300,24 @@ representative_ions = {
 }
 
 
-# Function to extract each column from the same citation row
+# Function to identify rows and collect columns with data for each citation
 def citation_rows(df: pd.DataFrame):
     """
     Extracts citations from DataFrame.
     Groups consecutive rows with the same citation.
     """
+
+    df = df.sort_values(by=df.columns[0], kind="stable")
+
     citation_col = df.iloc[:, 0]
     data_col = df.iloc[:, 2:]
     citation_data = {}
     current_idx = 0
     current_citation = None
 
+    # collect the row index range of column 0
     for row_idx in range(len(citation_col)):
+        # track the citation name of each row index
         citation_name = citation_col.iloc[row_idx]
 
         if (
@@ -469,7 +476,9 @@ class ww_proportion_calculator:
 
     def __init__(self, df, REPRESENTATIVE_IONS, industry, engine="phreeqc2026"):
         # __init__ method
+        df = df.sort_values(by=df.columns[0], kind="stable").reset_index(drop=True)
         self.df = df
+
         self.REPRESENTATIVE_IONS = REPRESENTATIVE_IONS
         self.industry = industry
 
@@ -934,6 +943,15 @@ class ww_proportion_calculator:
                 for ion_name, conc_val in comp.items():
                     compile_conc_by_element[ion_name].append(conc_val)
 
+        pprint.pprint(compile_conc_by_element)
+
+        # new addition (from 3/1 discussion) - we filter out elements that only has one value across all citation, which are considered as outliers.
+        compile_conc_by_element = {
+            element: conc_list
+            for element, conc_list in compile_conc_by_element.items()
+            if len(conc_list) > 1
+        }
+
         # pprint.pprint(compile_conc_by_element)
 
         for element, conc_list in compile_conc_by_element.items():
@@ -1122,7 +1140,13 @@ class ww_proportion_calculator:
                     }
                     pH_val = target_data.get("final_pH", None)
 
-                    pprint.pprint(solutes)
+                    # pprint.pprint(solutes)
+
+                    solutes = {
+                        element: conc
+                        for element, conc in solutes.items()
+                        if "H[+1]" not in str(element)
+                    }
 
                     self.report_equilibrated_proportions[self.industry] = {
                         "init_dict": solutes,
@@ -1171,6 +1195,8 @@ class ww_proportion_calculator:
 
                 new_dict = self._std_element_to_std_ion_dict(temp_dict, median_pH)
 
+                # pprint.pprint(new_dict)
+
                 self.report_equilibrated_proportions[self.industry] = {
                     "rep_ion_count": len(std_target_ions),
                     "init_pH": median_pH,
@@ -1196,24 +1222,29 @@ class ww_proportion_calculator:
         # pprint.pprint(median_conc_dict)
 
         for industry, data in self.report_equilibrated_proportions.items():
-            # median_conc_dict = data.get("init_dict", None)
-            # median_conc_dict = {k: v for k, v in (data.get("init_dict") or {}).items() if "unk" not in str(k).lower() and "unk" not in str(v).lower()}
             median_conc_dict = {
                 key: value
                 for key, value in median_conc_dict.items()
                 if float(value.split()[0]) > 0.0
             }
-            # pprint.pprint(median_conc_dict)
+
             median_pH_dict = data.get("init_pH", None)
             rep_ion_count = data.get("rep_ion_count", None)
+
+            pprint.pprint(median_conc_dict)
+            pprint.pprint(rep_ion_count)
 
             if rep_ion_count is not None and rep_ion_count == 1:
                 try:
                     final_eq_sol = Solution(
-                        solutes=median_conc_dict, pH=median_pH_dict, engine=custom_eos
+                        solutes=median_conc_dict,
+                        pH=median_pH_dict,
+                        balance_charge="auto",
+                        engine=custom_eos,
                     )
                     # final_eq_sol.equilibrate()
                 except Exception as e:
+                    print(f"ERROR: {e}")
                     return f"failed to equilibrate: {e}"
             elif rep_ion_count is not None and rep_ion_count > 1:
                 try:
@@ -1225,6 +1256,7 @@ class ww_proportion_calculator:
                     )
                     final_eq_sol.equilibrate()
                 except Exception as e:
+                    print(f"ERROR: {e}")
                     return f"failed to equilibrate: {e}"
             else:
                 continue
@@ -1392,21 +1424,54 @@ class ww_proportion_calculator:
                         else 0,
                     }
 
+            # checking pH to H[+1] conversion
+            calc_pH = np.log10(final_eq_sol.get_amount("H[+1]", "mol/L").magnitude)
+            calc_pH = -calc_pH
+            pyeql_pH = final_eq_sol.pH
+            assert np.isclose(calc_pH, pyeql_pH, atol=0.00001)
+
+            # # manual handling of dict through to_file
+            # filename = f"{self.industry}_eq.yaml"
+            # output_path = Path("./ww-outputs") / filename
+            # final_eq_sol.to_file(output_path)
+
             # manual handing of dict to avoid serialization error
             filename = f"{self.industry}_eq.yaml"
             solution_dict = final_eq_sol.as_dict()
             solution_dict.pop("database", None)
             solution_dict.pop("engine", None)
+            # dumpfn(solution_dict, "./ww-outputs/" + filename)
             dumpfn(solution_dict, "./ww-outputs/" + filename)
 
         json_name = f"final_eq_{self.industry}.json"
 
         dumpfn(self.final_eq, "./ww-outputs/" + json_name, indent=2)
+        # dumpfn(self.final_eq, "./final_eq_solutions_custom/" + json_name, indent=2)
 
         return self.final_eq
 
+    def check_H_and_pH_consistency(self):
+        """
+        Check internal consistency of the H[+1] concentration with pH property from Solution obj
+        """
 
-INDUSTRY = "Gasification"
+        filename = f"{self.industry}_eq.yaml"
+        # industry_path = Path("./final_eq_solutions_custom") / filename
+        industry_path = Path("./ww-outputs") / filename
+
+        # s1 = Solution.from_dict
+
+        s1 = Solution.from_file(industry_path)
+
+        calc_pH = np.log10(s1.get_amount("H[+1]", "mol/L").magnitude)
+        calc_pH = -calc_pH
+        pyeql_pH = s1.pH
+        print(calc_pH, pyeql_pH)
+
+        return np.isclose(calc_pH, pyeql_pH, atol=0.00001)
+
+
+INDUSTRY = "Leachate"
 raw_data = pd.read_csv(
     f"./Cleaned_C_for_pyEQL/{INDUSTRY}_pyEQL.csv", encoding="windows-1252"
 )
@@ -1419,10 +1484,11 @@ def execution(df: pd.DataFrame, REPRESENTATIVE_IONS: list, industry: str):
     """
 
     ww_prop = ww_proportion_calculator(df, REPRESENTATIVE_IONS, industry)
-    # calling each function sequentially
+
     # TODO: refactor to avoid calling function sequentially
     ion_dicts = ww_prop.build_ion_dict()
     initial_median_conc = ww_prop.build_initial_median_concentration()
+
     prop_from_initial_medians = (
         ww_prop.build_final_eq_from_initial_median_concentration()
     )
@@ -1431,13 +1497,27 @@ def execution(df: pd.DataFrame, REPRESENTATIVE_IONS: list, industry: str):
         ww_prop.build_proportion_from_final_eq_initial_median()
     )
 
-    # final_prop_from_initial_medians = ww_prop.build_median_tds_from_initial_eq_median_proportions()
     final_eq_from_initial_medians = ww_prop.final_equilibration_for_initial_median()
 
+    # check_pH_consistency = ww_prop.check_H_and_pH_consistency()
+
     return (
+        ww_prop.citation_list,
         ion_dicts,
         initial_median_conc,
         prop_from_initial_medians,
         eq_prop_from_initial_medians,
         final_eq_from_initial_medians,
+        # check_pH_consistency,
     )
+
+
+folder_path = "./ww-outputs"
+# folder_path = "./final_eq_solutions_custom"
+file_name = f"{INDUSTRY}.txt"
+full_path = os.path.join(folder_path, file_name)
+
+data = execution(raw_data, representative_ions[INDUSTRY], INDUSTRY)
+
+with open(full_path, "w") as f:
+    pprint.pprint(data, stream=f)
