@@ -422,10 +422,10 @@ solutes:
   CoOH[+1]: 1.4291940090486268e-40 mol
   Cd(OH)4[-2]: 1.1994762023560418e-40 mol
   Au[+3]: 1.1508680925414556e-40 mol
-volume: 1.0 l
+volume: 0.9999764827382436 l
 temperature: 298.15 K
 pressure: 1 atm
-pH: 3.9442766784805796
+pH: 3.9442664649434716
 pE: 8.5
 balance_charge:
 solvent: H2O(aq)
