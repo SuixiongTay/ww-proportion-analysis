@@ -4,7 +4,7 @@
 solutes:
   H2O(aq): 55.34457593619076 mol
   SO4[-2]: 0.008760282609896215 mol
-  Ca[+2]: 0.006580371732186891 mol
+  Ca[+2]: 0.0065803717319235 mol
   Na[+1]: 0.005073153517989906 mol
   CaSO4(aq): 0.002200970369454365 mol
   Cl[-1]: 0.0014644520956973643 mol
@@ -164,12 +164,13 @@ solutes:
   Cr[+2]: 4.8944835972878565e-39 mol
   SbCl4[-1]: 1.091808098332722e-40 mol
   VSO4[+1]: 1.0118715383359624e-40 mol
-volume: 1.0 l
+volume: 1.0000153657382238 l
 temperature: 298.15 K
 pressure: 1 atm
-pH: 7.466118671239866
+pH: 7.466125344443918
 pE: 8.5
 balance_charge: auto
 solvent: H2O(aq)
+engine: native
 default_diffusion_coeff: 1.6106e-09
 log_level: ERROR
