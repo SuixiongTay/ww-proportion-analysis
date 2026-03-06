@@ -73,5 +73,6 @@ pH: 2.643879208760004
 pE: 8.5
 balance_charge: auto
 solvent: H2O(aq)
+engine: native
 default_diffusion_coeff: 1.6106e-09
 log_level: ERROR
